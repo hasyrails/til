@@ -1,0 +1,9 @@
+Railsの実行環境は３つに分類される
+・development環境　（開発環境）
+・production環境　（本番環境）
+・test環境　（テスト環境）
+
+rails c で実行環境を確認することができる
+$ rails c
+Running via Spring preloader in process 67487
+Loading development environment (Rails 5.2.4.2)
