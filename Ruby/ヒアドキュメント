@@ -1,0 +1,23 @@
+正規表現の学習で初見のヒアドキュメント
+
+https://docs.ruby-lang.org/ja/latest/doc/spec=2fliteral.html
+
+例えば
+
+text = <<-TEXT
+  Name：HogeTaro
+  TEL：03-1234-5678
+  Adress：HogeHogeArea
+TEXT
+
+だと、
+変数textに識別子TEXTに挟まれた文字列を格納。
+
+テキストエディタのターミナルで確認：
+print で出力確認
+
+print text = <<-TEXT
+  Name：HogeTaro
+  TEL：03-1234-5678
+  Adress：HogeHogeArea
+TEXT
