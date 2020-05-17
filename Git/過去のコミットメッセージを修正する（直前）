@@ -1,0 +1,13 @@
+
+参考 ： https://www.granfairs.com/blog/staff/git-commit-fix
+
+誤字ったコミットメッセージでcommit作成してしまった！（「修正」と打ちたかったのに）
+$ git commit -m 'fix/ ArticlesController#updateを修'
+
+→ $ git commit amend -m '(メッセージ修正ver)' 
+  で直前コミットのメッセージを修正できる
+  
+  $ git commit amend　-m 'fix/ ArticlesController#updateを修正'
+  
+直前より前のコミットのコミットメッセージ修正は
+git rebase -i を使う
