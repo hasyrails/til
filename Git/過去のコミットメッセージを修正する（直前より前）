@@ -1,0 +1,17 @@
+直前のcommitのメッセージ修正は
+$ git commit --amend -m '(メッセージ修正版)'
+
+2つ以上前のコミットのメッセージを修正する時は？
+
+n個前のコミットメッセージを修正するviエディタを開く
+（n = 2,3,4‥）
+$ git rebase -i HEAD~n 
+
+viエディタ
+①　i　　:入力モードへ切り替え
+②　修正したいコミットを　pick → edit　へ書き換えする
+③　Esc　:コマンドモードへ切り替え
+④　:wq  :ファイル書き込みをして終了
+⑤  (editに書き換えたコミットまで戻っているので) git commit --amend -m '' で修正
+
+参考　：　https://www.granfairs.com/blog/staff/git-commit-fix
