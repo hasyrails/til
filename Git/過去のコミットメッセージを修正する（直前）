@@ -7,7 +7,19 @@ $ git commit -m 'fix/ ArticlesController#updateを修'
 → $ git commit amend -m '(メッセージ修正ver)' 
   で直前コミットのメッセージを修正できる
   
-  $ git commit amend　-m 'fix/ ArticlesController#updateを修正'
+  $ git commit --amend　-m 'fix/ ArticlesController#updateを修正'
   
 直前より前のコミットのコミットメッセージ修正は
 git rebase -i を使う
+
+2020/05/19 追記
+参考 ： https://www.atlassian.com/ja/git/tutorials/rewriting-history
+
+$ git commit --amend -m '~~~'
+でコメント修正して作ったブランチは
+もともとのブランチにコメント修正を上書きしているのではなく、
+全くの新しいブランチを作っているとのこと。
+
+修正前のコミットは
+カレントブランチから完全に削除されてしまう
+→　チーム開発時、留意しなければならない
