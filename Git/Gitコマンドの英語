@@ -1,0 +1,8 @@
+$ git commit -m '(コミットメッセージ)'
+-m : メッセージ（message） →　コミットメッセージを入力
+
+$ git commit --amend -m '（コメント修正ver)'
+--amend : 修正　→　コミットメッセージの修正
+  
+$ git stash
+stash : こっそりしまう、隠す　→　「退避」
