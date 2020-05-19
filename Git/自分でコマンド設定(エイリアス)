@@ -1,0 +1,24 @@
+git config でコマンド設定しよう
+
+git は
+デフォルトではファイルパスの推定はしてくれるが、
+コマンドを自動的に補完推定してくれない
+
+↓
+
+git config でエイリアス設定して
+コマンド省略ver を自分で設定できる！！
+
+コマンド $ git XXXXXX に対して
+git以降のXXXXXX部分のコマンド省略verを設定できる
+
+$ git config --global alias.(コマンド省略ver エイリアス) (もともとのコマンド)
+
+（例）
+$ git commit -m 
+$ git com で実行できるように設定したい
+
+$ git config --global alias.com 'commit -m'
+
+参考：
+https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9
