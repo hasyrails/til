@@ -35,4 +35,33 @@ Date:   Fri May 22 23:40:25 2020 +0900
 空白行を入れる場所を自分で調整したい場合は  
 ヒアドキュメントを用いてコミットメッセージを残すのが良い↓  
 
-###
+### ヒアドキュメントを使って改行する。
+
+ヒアドキュメントを使ってコミットコメントを残すには次のコマンドを使う
+```
+# ヒアドキュメント識別子をEOM(End Of Message)とする 
+$ git commit -F- <<EOM　
+```
+returnキーを押すと  
+EOMを打つまでheredoc> で改行してくれる
+
+```
+$ git commit -F- <<EOM
+heredoc> line1 #returnキーで次の行に改行　新しいheredoc>が出てくる 
+heredoc> line2
+heredoc> line３
+heredoc> EOM　 #コメントを終了したい時はヒアドキュメント識別子を打ち込む
+```
+$git log で確認できるメッセージは次のようになる。
+
+```
+commit 4ea04ad919cb56ee3ec87796beaa268cf260394b
+Author: username <hogehoge@mailaddress.com>
+Date:   Sat May 23 00:23:57 2020 +0900
+
+    line1
+    line2
+    line3
+
+```
+
