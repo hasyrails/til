@@ -25,3 +25,8 @@ v-on:(event)
 ```
 
 https://blog.capilano-fw.com/?p=2787
+
+### v-onの省略記法
+
+例えば
+```v-on:click``` は　```@click```
