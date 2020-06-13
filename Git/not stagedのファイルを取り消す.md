@@ -14,3 +14,13 @@ $ git checkout .
 
 
 https://www.yoheim.net/blog.php?q=20140201
+
+## git restore - ファイル変更を取り消す -
+
+Gitバージョン2.23.0の新コマンドらしい  
+https://qiita.com/yukibear/items/4f88a5c0e4b1801ee952
+
+ファイルの変更を取り消す
+```
+git restore <filename>
+```
