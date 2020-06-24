@@ -11,6 +11,13 @@ gem 'seed-fu'
 > が、細かい設定がしづらい。  
 https://qiita.com/m-shin/items/0a0848ef1f5d46df745d
 
+### ほぉ
+
+> Railsにはデフォルトで初期データを入れる仕組みとして rake db:seed がありますが、　　
+> これは実行する度に同じデータが作成されてしまいます。　　
+> そこで、代わりにseed-fuを利用するとデータの追加、管理が簡単にできるようになります！　　
+https://remonote.jp/rails-seed-fu
+
 ## SeedFu.seed とは
 ```ruby
 SeedFu.seed
