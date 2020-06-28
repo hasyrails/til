@@ -1,7 +1,7 @@
 ## eventの設定
 ``` jsx
 # == clickイベント発火時にボタン表記文字をコンソール出力させる ==
-<button onClick={() => {console.log('ひつじ仙人')}}>ひつじ仙人</button>
+<button onClick={() => {console.log('ボタンを押してね')}}>ボタンを押してね</button>
 ```
 
 ## stateの設定/変更
@@ -13,7 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     // stateを定義
-    this.state = {name: 'にんじゃわんこ'};
+    this.state = {name: 'ねこ'};
     
   }
   
@@ -21,8 +21,8 @@ class App extends React.Component {
     return (
     	<div>
     	  <h1>こんにちは、にんじゃわんこさん！</h1>
-        <button onClick={() => {this.setState({name: 'ひつじ仙人'})}}>ひつじ仙人</button>
-        <button onClick={() => {this.setState({name: 'にんじゃわんこ'})}}>にんじゃわんこ</button>
+        <button onClick={() => {this.setState({name: 'ひつじ'})}}>ひつじ</button>
+        <button onClick={() => {this.setState({name: 'ねこ'})}}>ねこ</button>
       </div>
     );
   }
@@ -43,21 +43,21 @@ import React from 'react';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {name: 'にんじゃわんこ'};
+    this.state = {name: 'ねこ'};　
   }
   
   // handleClickメソッドを定義
   handleClick(name){
-    this.setState({name: name});
+    this.setState({name: name}); 
   }
   
   render() {
     return (
     	<div>
-    	  <h1>こんにちは、{this.state.name}さん！</h1>
+    	  <h1>こんにちは、{this.state.name}さん！</h1>  {/*  こんにちは、ねこさん！ */}
     	  {/* handleClickメソッドでstate変更する */}
-        <button onClick={() => {this.handleClick('ひつじ仙人')}}>ひつじ仙人</button>
-        <button onClick={() => {this.handleClick('にんじゃわんこ')}}>にんじゃわんこ</button>
+        <button onClick={() => {this.handleClick('ひつじ')}}>ひつじ</button>
+        <button onClick={() => {this.handleClick('ねこ')}}>ねこ</button>
         
       </div>
     );
