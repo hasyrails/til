@@ -19,15 +19,10 @@ Qiita
 > https://qiita.com/tuttieee/items/a3ca7d9d415049d02d60#presentational-component
 
 ### Purpose
-> Presentational componentsは見た目だけを扱うコンポーネントです．
-### Aware of Redux
-Redux store に接続しているかどうか？
-> Most of the components we'll write will be presentational, 
-> but we'll need to generate a few container components to connect them to the Redux store. 
-
-> storeにもアクセスしません．なので，dispatchもできません．
-### To read data
-> 基本的にstateには触らず，propsとして与えられるデータを表示することに専念します．
-
-### To change data
-> 例えばボタンを表示しても，```onClick```ではpropsで与えられるコールバック関数を呼ぶだけです．
+> Container componentはPresentational componentに具体的なデータやコールバック関数を与えるコンポーネントです．
+### Aware of Redux/ To read data / To change data
+Redux store に接続しているかどうか？ → storeにアクセスしてdispatchする
+#### ▶︎```mapStateToProps(state, ownProps)``` 
+引数```state```,```ownProps```により、Presentational componentのpropsとして渡す値を生成する
+#### ▶︎```mapDispatchToProps(dispatch)```  
+引数```dispatch```は```store.dispatch```のこと
