@@ -13,6 +13,6 @@ https://railsguides.jp/active_storage_overview.html#%E7%94%BB%E5%83%8F%E3%82%92%
 ```resize```は
 ```gem 'mini_magick'```で定義されている画像変換オプション
 
-画像変換のメソッドを定義して、
-なおかつview側で
+画像変換のメソッドを定義して、　　
+なおかつview側で　　
 ```variant```メソッドで画像変換オプションを指定する時に使う。
